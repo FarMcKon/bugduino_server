@@ -2,7 +2,7 @@
 
 KERN_INC_DIR?=/home/farmckon/dev_bl/linaro_kern/include/
 JDK_INC_DIR?=/usr/lib/jvm/java-6-openjdk/include/
-CC=$(CROSS_COMPILE)gcc
+CC?=gcc
 
 HAS_KERN_DIR=$(shell if [ -d $(KERN_INC_DIR) ]; then echo 'true' ; fi)
 HAS_JDK_DIR=$(shell if [ -d $(JDK_INC_DIR) ]; then echo 'true' ; fi)
